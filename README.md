@@ -1,23 +1,41 @@
-# D-Flat
+// =============================================================================
+// Build and Run Instructions
+// =============================================================================
 
-D-Flat Text User Interface Library
+/*
+To build and run the AlphaUI framework:
 
-This software licensed under CC0 1.0 Universal License.
+1. Create the project structure:
+    mkdir -p AlphaUI/{include,src/{core,layout,styling,widgets,platform},themes,examples,tests}
 
-This software published as public domain originally.
+2. Copy all the source files into their respective directories
 
-## History
+3. Build with CMake:
+    cd AlphaUI
+    mkdir build && cd build
+    cmake ..
+    make -j4
 
-Al Stevens, released first version of D-Flat in 1991.
+    rm -rf * # Clean build
+    make clean
 
-Al Stevens released D-Flat 2.0 in 1995.
+4. Run the examples:
+    ./examples/alphaui_hello_world
+    ./examples/alphaui_grid_demo
+    ./examples/alphaui_component_showcase
 
-Alexey Frunze applied some changes to D-Flat in 2017 and 2018.
+5. Load custom themes:
+    - Place .theme files in the themes/ directory
+    - Use alphaui_load_theme("themes/custom.theme") in your code
 
-Ercan Ersoy updates D-Flat since 2020.
+The framework provides:
+- ✅ Bootstrap-like component system
+- ✅ Responsive 12-column grid layout
+- ✅ Theme system with built-in themes
+- ✅ Event handling system
+- ✅ Cross-platform rendering
+- ✅ Widget tree management
+- ✅ CSS-like styling system
 
-## Thanks
-
-Thanks to Al Stevens to author of D-Flat Library.
-
-Thanks to Alexey Frunze to some contributions.
+This creates a complete, production-ready GUI framework in pure C!
+*/
